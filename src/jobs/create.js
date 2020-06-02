@@ -23,6 +23,8 @@ module.exports.handler = async (event, context) => {
 
   try {
     const {error, value} = Joi.validate(data, schema);
+    if(error)
+      throw error;
   } catch (e) {
     return {
       statusCode: 400,
