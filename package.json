@@ -9,7 +9,7 @@
     "uuid": "^8.1.0"
   },
   "devDependencies": {
-    "serverless-offline": "^6.3.0"
+    "serverless-offline": "^12.0.4"
   },
   "scripts": {
     "dev": "nodemon --exec \"sls offline start\" -e \"js yml json\"",
